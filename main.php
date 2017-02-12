@@ -247,7 +247,7 @@
 		</div>
 		<!-- /.column -->
 
-			<p class="copyright">© 2015 Copyright Info. All rights reserved.</p>
+			<p class="copyright">Copyright ©<?= date("Y") ?> Camp Walt Whitman. All rights reserved.</p>
 			<p class="copyright siteBy"><a href="http://www.dvscampmarketing.com/" target="_blank">Camp website by DVS Camp Marketing</a></p>
 	</div>
 	<!-- /.footerInside -->
