@@ -1,4 +1,4 @@
-	<div class="innerPageImgHolder">
+	<div class="innerPageImgHolder" edit="banner_image">
 		<?php if ($page->parent->template == "book"): ?>
 		<img src="<?= $page->parent->banner_image ? $page->parent->banner_image->getCrop("banner_size")->url : 
 		$config->urls->templates."images/innerPageImg.jpg" ?>" width="620" height="270" alt="<?= $page->parent->banner_image->description ?>" />
