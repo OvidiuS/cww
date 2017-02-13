@@ -29,4 +29,7 @@
 	<div class="faq_answer" style="display: block;"><?= $faq->body_small ?></div>
 	<?php endforeach ?>
 	<?php endif ?>
+	<?php if ($page->editable()): ?>
+	<p style="color:white;background-color:#FF0090;padding:10px;font-weight: bold;" edit="images,files">Manage Images and files for this page (double-click)</p>
+	<?php endif ?>
 	</div>
