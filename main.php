@@ -287,8 +287,43 @@
 		<script type="text/javascript" src="<?= $config->urls->templates ?>scripts/giv/jquery.lhpGigaImgViewer.js"></script>
 
 		<script>
+		/* map */
+
+		$(document).ready(function(){
+			var settings = {
+				'viewportWidth' : '100%',
+				'viewportHeight' : '100%',
+				'fitToViewportShortSide' : true,  
+				'contentSizeOver100' : false,
+				'startScale' : 0,
+				'startX' : 0,
+				'startY' : 0,
+				'animTime' : 500,
+				'draggInertia' : 10,
+				'imgDir' : '/cww-pw/site/templates/images/map/',
+				'mainImgWidth' : 1683,
+				'mainImgHeight' : 1129,
+				'intNavEnable' : true,
+				'intNavPos' : 'B',
+				'intNavAutoHide' : false,
+				'intNavMoveDownBtt' : true,
+				'intNavMoveUpBtt' : true,
+				'intNavMoveRightBtt' : true,
+				'intNavMoveLeftBtt' : true,
+				'intNavZoomBtt' : true,
+				'intNavUnzoomBtt' : true,
+				'intNavFitToViewportBtt' : true,
+				'intNavFullSizeBtt' : true,
+				'intNavBttSizeRation' : 1,
+				'mapEnable' : true,
+				'mapPos' : 'BL',
+				'popupShowAction' : 'click',
+				'testMode' : false
+			};
 			
-	</script>
+			$('#interactiveMapHolder').lhpGigaImgViewer(settings, 'MyHotspots');
+		});	
+		</script>
 	<!-- swfobject -->
 	<script  src="<?= $config->urls->templates ?>scripts/giv/swfobject.js"></script>
 
