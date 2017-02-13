@@ -300,7 +300,7 @@
 				'startY' : 0,
 				'animTime' : 500,
 				'draggInertia' : 10,
-				'imgDir' : '/cww-pw/site/templates/images/map/',
+				'imgDir' : '/site/templates/images/map/',
 				'mainImgWidth' : 1683,
 				'mainImgHeight' : 1129,
 				'intNavEnable' : true,
