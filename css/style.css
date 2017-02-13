@@ -2091,6 +2091,10 @@ top: 115px;
 	padding: 10px 0 20px 0;
 }
 
+.pw-edit-buttons.pw-edit-buttons-location-auto {
+	z-index: 999;
+}
+
 /* RESPONSIVE media queries */
 
 @media only screen and (min-width:580px) {

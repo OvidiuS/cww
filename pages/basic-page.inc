@@ -10,12 +10,12 @@
 		<?php if ($page->id == "1018"): ?>
 		<a href="videos.html" class="watchVideoInnerUpper">Watch Our Video</a>
 		<?php endif ?>
-		<h3><?= $page->get("headline|title") ?></h3>
+		<h3><?= $page->headline ? $page->edit("headline") : $page->edit("title") ?></h3>
 	</div>
 
 	
 	<div class="innerPageRTE">
-	<?= $page->body; ?>
+	<?php echo $page->edit('body'); ?>
 	<?php if ($page->template == "book-page"): ?>
 		<?php if ($page->parent->id == "1065"): ?>
 	<a href="/current-families/cww-songbook/">back to Songbook</a>
